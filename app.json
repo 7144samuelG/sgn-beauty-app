@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "beauty-app",
+    "slug": "beauty-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/sam2.png",
+    "userInterfaceStyle": "light",
+    "plugins": [
+      "@react-native-google-signin/google-signin"
+    ],
+    "splash": {
+      "image": "./assets/sam2.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "28c22cee-6224-4f70-b9ec-11e0e56bb690"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/28c22cee-6224-4f70-b9ec-11e0e56bb690"
+    }
+  }
+}
