@@ -24,7 +24,7 @@ const Welcome1 = () => {
   };
 
   return (
-    <SafeAreaView style={tw`bg-white h-full w-full`}>
+    <SafeAreaView style={tw`bg-white h-full w-full pb-[30px]`}>
       <View style={tw` pl-5`}>
         {/* // <Text style={tw`text-[45px] mt-[60px] ml-[20px] font-serif italic`}>
         //   SGN

@@ -15,10 +15,11 @@ export default function BasketIcon() {
   //console.log(basketTotal);
 
   return (
-    <View style={tw`absolute -bottom-0 w-full z-50`}>
+    
+    <View style={tw`absolute -bottom-0 mt-10 mb-3  w-full  z-50`}>
       <TouchableOpacity
         onPress={() => {navigation.navigate("Cart")}}
-        style={tw`mx-5 bg-[#00CCBB] p-4 rounded-lg flex-row`}
+        style={tw`mx-5 bg-[#00CCBB] p-4 rounded-lg  flex-row w-full`}
       >
         <Text style={tw`text-white font-extrabold text-lg bg-[#01A296] py-1 px-2`}>
           {items.length}
@@ -31,5 +32,6 @@ export default function BasketIcon() {
         </Text>
       </TouchableOpacity>
     </View>
+    
   );
 }

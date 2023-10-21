@@ -51,8 +51,8 @@ const Home = () => {
   };
 
   return (
-    <SafeAreaView style={tw``}>
-      <ScrollView>
+    <SafeAreaView >
+      <ScrollView style={tw` px-2 pb-2`}>
         <View style={tw`flex-row justify-between items-center px-2 mt-[50px]`}>
           <TouchableOpacity onPress={() => navigation.navigate("Profile")}>
             <Text
@@ -105,7 +105,7 @@ const Home = () => {
             </View>
           </View>
         </View>
-        <View style={tw`flex-row justify-between bg-white rounded-[30px] mx-3`}>
+        <View style={tw`flex-row justify-between bg-white py-2 px-3 rounded-[30px] px-3 w-full overflow-hidden`}>
           <View>
             <Text style={tw`text-[24px] pl-4 pt-[60px]`}>New product for</Text>
             <Text style={tw`text-[24px] pl-4`}>your skin</Text>
@@ -124,16 +124,16 @@ const Home = () => {
             style={tw`w-[200px] h-[200px]`}
           />
         </View>
-        <Text style={tw`text-bold text-[30px]`}>Categories</Text>
+        <Text style={tw`text-bold text-[30px] py-2 opacity-60`}>Categories</Text>
         <View>
           <CategoriesC />
         </View>
         <View>
-          <Text style={tw`text-bold text-[30px] my-5`}>Bestsellers</Text>
+          <Text style={tw`text-bold text-[30px] my-5 opacity-60`}>Bestsellers</Text>
           <Coffee />
         </View>
         <View>
-          <Text style={tw`text-bold text-[30px] my-5`}>Featured</Text>
+          <Text style={tw`text-bold text-[30px] my-5 opacity-60`}>Featured</Text>
           <FeaturedCoffee />
         </View>
       </ScrollView>

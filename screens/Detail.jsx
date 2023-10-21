@@ -39,15 +39,15 @@ const Detail = () => {
   };
 
   return (
-    <SafeAreaView style={tw`relative h-full`}>
+    <SafeAreaView style={tw`relative h-full `}>
       <LinearGradient
         colors={["pink", "white", "white"]}
         start={{ x: 0, y: 0.5 }}
         end={{ x: 1, y: 0.5 }}
-        style={tw` h-full`}
+        style={tw` h-full px-6`}
       >
         <BasketIcon />
-        <View>
+        <View >
           <TouchableOpacity
             onPress={() => {
               navigation.goBack();
@@ -57,15 +57,15 @@ const Detail = () => {
               name="left"
               size={30}
               color="black"
-              style={tw`absolute top-[50px] border rounded-full z-10 left-5`}
+              style={tw`absolute top-[50px] border rounded-full z-99999 left-5`}
             />
           </TouchableOpacity>
         </View>
         <Image
           source={item.params.item.image}
-          style={tw`w-full mx-auto h-1/2 mt-4 z-0`}
+          style={tw`w-full mx-auto h-1/2 mt-[50px] rounded-[20px]`}
         />
-        <Text style={tw`text-black mt-5 text-[24px]`}>
+        <Text style={tw`text-black mt-2 text-[24px]`}>
           {item.params.item.name} product
         </Text>
         <Text style={tw`text-gray-500 mt-1 text-[24px]`}>
@@ -78,7 +78,7 @@ const Detail = () => {
           </Text>
         </View>
         <Text style={tw`text-[16px] pt-4 leading-8`}>
-          {item.params.item.description.slice(0,200)}
+          {item.params.item.description.slice(0,150)}
         </Text>
         <View style={tw`flex-row justify-between pr-3`}>
           <Text style={tw`text-[20px] text-black pl-1 pt-4`}>
